@@ -3,7 +3,7 @@ export function renderProfile(userData, userRepos, container) {
     userRepos && userRepos.length > 0
       ? userRepos
           .map(
-            (prepo) => `
+            (repo) => `
     <a href="${repo.html_url}" target="_blank">
       <div class="repository-card">
         <h3>${repo.name}</h3>
